@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const commentDisplay = document.querySelector('#comment-display');
     const newRamenForm = document.querySelector('#new-ramen');
 
+
     let ramenData = [
         {
             name: 'Kojiro',
@@ -41,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             restaurant: 'Ichiran',
             image: 'assets/images/Ramen/shoyu.jpg',
             rating: 9,
-            comment: 'Delicious!',
+            comment: 'Delicious!!',
         },
         {
             name: 'Nirvana',
