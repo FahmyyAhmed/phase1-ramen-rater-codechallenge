@@ -1,112 +1,136 @@
 * {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-  }
-
-  body {
-    padding: 1rem;
-    text-align: center;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  header {
-    padding: 0.5rem;
-    width: 100%;
-    color: whitesmoke;
-    background-color: black;
-    margin: auto;
-    
-  }
-
-  #ramen {
-    display: flex;
-    margin: 1rem 0;
-    max-width: calc(100vw - 2rem);
-    flex-wrap: wrap;
-    justify-content: center;
-    transform: scale(1.1);
-  }
-
-  #ramen img {
-    flex: 0 1 auto;
-    height: 150px;
-    margin-right: 0.5rem;
-    transform: scale(1.1);
-  }
-
-  #place{
-    position: relative;
-  }
-
-  .holder{
-    height: 350px;
-  }
-
-  .name,
-.restaurant {
-position: absolute;
-left:300px;
-padding: 0.25rem 5rem 0.25rem 1rem;
-background-color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
-.name{
-    bottom: 60px;
-    color: green;
-  }
+body {
+  padding: 2rem;
+  text-align: center;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-  .restaurant{
-    bottom: 20px;
-    color: red;
-  }
+header {
+  height: 75px;
+  width: 75%;
+  color: white;
+  background-color: black;
+  margin: auto;
+  font-size: 17px;
+}
 
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: black;
-  }
-  
-  
-  input,
-  textarea {
-    font-size: 1rem;
-    border: 1px solid black;
-    background-color: gainsboro;
-    padding: 0.5rem;
-    margin: 0.25rem 0;
-    width: 100%;
-  }
-  
-  input[type="submit"] {
-    color: white;
-    border: 1px solid white;
-    background-color: black;
-    cursor: pointer;
-    transition: all 0.5s;
-  }
-  
-  input[type="submit"]:active {
-    background-color: gray;
-  }
-  
-  form h4 {
-    width: 100%;
-    padding: 0.25rem;
-    margin: 0.5rem 0;
-    color: whitesmoke;
-    background-color: black;
-    border-color: white;
-  }
+#ramen-menu {
+  display: flex;
+  margin: 2rem 0;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
 
-  footer {
-    background-color: black;
-    color: whitesmoke;
-  }
+#ramen-menu img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
 
+#ramen-detail {
+  width: 350px;
+  height: auto;
+  margin: 2rem auto;
 
+}
+
+#ramen-detail .detail-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+#ramen-detail .name,
+#ramen-detail .restaurant {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+#ramen-detail .name {
+  color: green;
+  background-color: burlywood;
+}
+
+#ramen-detail .restaurant {
+  color: red;
+  background-color: lightblue;
+}
+
+#ramen-detail h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+#ramen-detail #rating-display,
+#ramen-detail #comment-display {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+#ramen-detail #comment-display {
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: green;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+input,
+textarea {
+  font-size: 1rem;
+  border: 1px solid black;
+  background-color: gainsboro;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+input[type="submit"] {
+  color: white;
+  border: 1px solid gainsboro;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+input[type="submit"]:active {
+  background-color: gray;
+}
+
+form h4 {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: whitesmoke;
+  background-color: black;
+  border-color: wheat;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 1.2rem;
+}
